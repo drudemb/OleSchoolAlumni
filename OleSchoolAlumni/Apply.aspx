@@ -88,13 +88,13 @@
                             <div class="col-md-6">
                                 <label>Create Your ID</label>
                                 <div class="mb-3">
-                                    <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="txtUsername" runat="server" placeholder="User ID" ></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Create a Password</label>
                                 <div class="mb-3">
-                                    <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="txtPass" runat="server" placeholder="Password" TextMode="Password" ></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,8 @@
                                 <center>
                                     <div class="mb-3 d-grid gap-2">
                                         <hr>
-                                        <asp:Button  CssClass="btn btn-success" ID="btnSubmitApp" runat="server" Text="Submit Application" />
+                                        <asp:Button  CssClass="btn btn-success" ID="btnSubmitApp" runat="server" Text="Submit Application" OnClick="btnSubmitApp_Click" />
+                                        <asp:Label ID="lblStatus" runat="server"></asp:Label>
                                     </div>
                                 </center>
                             </div>

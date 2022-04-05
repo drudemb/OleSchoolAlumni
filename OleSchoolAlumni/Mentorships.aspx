@@ -48,7 +48,8 @@
 
                         <div class="row">
                             <div class="col">
-                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-primary" runat="server" Text="Assign" />
+                                <asp:Button ID="btnAssignMentor" CssClass="btn btn-lg btn-block btn-primary" runat="server" Text="Assign" OnClick="btnAssignMentor_Click"/>
+                                <asp:Label ID="lblConfirmation" runat="server" Text=" "></asp:Label>
                             </div>
                         </div>
                     </div>

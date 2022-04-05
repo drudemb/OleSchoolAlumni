@@ -31,13 +31,13 @@
                             <div class="col-md-6">
                                 <label>First Name</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="First Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMFname" runat="server" placeholder="First Name"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Last Name</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Last Name"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMLname" runat="server" placeholder="Last Name"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -45,13 +45,13 @@
                             <div class="col-md-6">
                                 <label>Email</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Email" TextMode="Email"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMEmail" runat="server" placeholder="Email" TextMode="Email"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Phone Number</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Phone Number" TextMode="Phone"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMPhone" runat="server" placeholder="Phone Number" TextMode="Phone"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -59,24 +59,39 @@
                             <div class="col-md-6">
                                 <label>Graduation Year</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Graduation Year"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMGrad" runat="server" placeholder="Graduation Year"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Job Title</label>
                                 <div class="mb-3">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox6" runat="server" placeholder="Title"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="txtMJob" runat="server" placeholder="Title"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Username</label>
+                                <div class="mb-3">
+                                    <asp:TextBox CssClass="form-control" ID="txtMembUser" runat="server" placeholder="Username"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Password</label>
+                                <div class="mb-3">
+                                    <asp:TextBox CssClass="form-control" ID="txtMembPass" runat="server" placeholder="Password"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-primary" runat="server" Text="Add" />
+                                <asp:Button ID="btnAddMember" CssClass="btn btn-lg btn-block btn-primary" runat="server" Text="Add" OnClick="btnAddMember_Click"/>
+                                <asp:Label ID="lblStatus" runat="server"></asp:Label>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="AdminDashboard.aspx"><< Back to Home</a><br>
+                <a href="Dashboard.aspx"><< Back to Home</a><br>
                 <br>
             </div>
             <div class="col-md-7">

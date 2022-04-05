@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="AdminDashboard.aspx"><< Back to Home</a><br>
+                <a href="Dashboard.aspx"><< Back to Home</a><br>
                 <br>
             </div>
             <div class="col-md-7">
@@ -114,7 +114,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h4>Recently Accepted</h4>
+                                    <h4>Recent Applications</h4>
                                 </center>
                             </div>
                         </div>
