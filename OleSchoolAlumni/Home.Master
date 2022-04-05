@@ -14,7 +14,7 @@
     <link href="fontawsome/css/all.css" rel="stylesheet" />
 
     <%--our custom css--%>
-    <link href="css/customstylesheet.css" rel="stylesheet" />
+    <link href="css/stylesheet.css" rel="stylesheet" />
 
     <%--jquery--%>
     <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
@@ -28,62 +28,49 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
         <!--Header Start-->
-        <div>
-            <header class="header navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="home.aspx">
-                    <i class="fa-solid fa-graduation-cap" width="30" height="30"></i>
-                    Ole School Alumni Group
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse navbarSupportedContent">
-                    <ul class="navbar-nav" id="rightnav">
-                        <li class="nav-item1 active">
-                            <asp:LinkButton class="nav-link" ID="lnkBtnLogin" runat="server" href="StudentLogin.aspx">Student Login</asp:LinkButton>
-
-                        </li>
-                        <li class="nav-item1 active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton14" runat="server" href="Apply.aspx">Sign Up</asp:LinkButton>
-                        </li>
-                        <li class="nav-item1 active">
-                            <asp:LinkButton CssClass="nav-link" ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
-                        </li>
-                    </ul>
+        <header>
+            <div class="container padding">
+                <div class="row align-items-start">
+                    <div class="text-center padding">
+                        <a href="Home.aspx">
+                            <img  class="img-fluid logo" src="images/OleSchoolLogo.jpeg"  alt="Ole School Logo"/>
+                        </a>
+                    </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
         <!--Header End-->
 
-        <!--- Navagation Section --->
-        <div id="nav1">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="collapse navbar-collapse navbarSupportedContent">
-                    <ul class="navbar-nav" id="centernav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Home.aspx">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Events.aspx">Events</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="AboutUs.aspx">About Us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Apply.aspx">Apply</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Donate.aspx">Donate</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <!--Nav Start-->
+        <nav class="container nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="Home.aspx">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                    <li><a class="dropdown-item" href="#">Engagement</a></li>
+                    <li><a class="dropdown-item" href="#">Past Awardees</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="nav-link" href="https://www.paypal.com/donate/?hosted_button_id=Y4D2ZG46MFSTE">Donate</a>
+            </li>
+             <li>
+                <a class="nav-link" href="Events.aspx">Events</a>
+            </li>
+            <li>
+                <a class="nav-link" href="Apply.aspx">Apply</a>
+            </li>
+            <li>
+                <a class="nav-link" href="StudentLogin.aspx">Login</a>
+            </li>
+             
+        </nav>
         <!--Nav End-->
-
 
         <!--Main Content Placeholder-->
         <div>

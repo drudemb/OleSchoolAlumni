@@ -42,6 +42,15 @@ namespace OleSchoolAlumni
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl adminSidebar;
 
         /// <summary>
+        /// btnLogout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogout;
+
+        /// <summary>
         /// studentSidebar control.
         /// </summary>
         /// <remarks>
@@ -51,6 +60,15 @@ namespace OleSchoolAlumni
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl studentSidebar;
 
         /// <summary>
+        /// btnLogout1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogout1;
+
+        /// <summary>
         /// memberSidebar control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,15 @@ namespace OleSchoolAlumni
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl memberSidebar;
+
+        /// <summary>
+        /// btnLogout2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogout2;
 
         /// <summary>
         /// lblCurrentUser control.
