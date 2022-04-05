@@ -90,10 +90,9 @@
 
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
-
-                    <a class="nav-link" href="Home.html">
+                    <asp:LinkButton CssClass="nav-link" ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout
                         <i class="fas fa-fw  fa-right-from-bracket"></i>
-                        <span>Logout</span></a>
+                    </asp:LinkButton>
                 </li>
 
 
@@ -168,9 +167,9 @@
 
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <asp:LinkButton CssClass="nav-link" ID="btnLogout1" runat="server" OnClick="btnLogout1_Click">Logout
                         <i class="fas fa-fw  fa-right-from-bracket"></i>
-                        <span>Logout</span></a>
+                    </asp:LinkButton>
                 </li>
 
 
@@ -251,9 +250,9 @@
 
                 <!-- Nav Item - Logout -->
                 <li class="nav-item">
-                    <a class="nav-link" href="Home.aspx">
+                    <asp:LinkButton CssClass="nav-link" ID="btnLogout2" runat="server" OnClick="btnLogout2_Click">Logout
                         <i class="fas fa-fw  fa-right-from-bracket"></i>
-                        <span>Logout</span></a>
+                    </asp:LinkButton>
                 </li>
 
 

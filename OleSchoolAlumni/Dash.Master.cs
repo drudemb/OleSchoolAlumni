@@ -38,5 +38,23 @@ namespace OleSchoolAlumni
                 adminSidebar.Visible = false;
             }
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Home.aspx");
+        }
+
+        protected void btnLogout1_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Home.aspx");
+        }
+
+        protected void btnLogout2_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Home.aspx");
+        }
     }
 }

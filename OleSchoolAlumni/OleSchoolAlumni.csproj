@@ -82,6 +82,7 @@
     <Content Include="css\customstylesheet.css" />
     <Content Include="css\eventsstyle.css" />
     <Content Include="css\sb-admin-2.min.css" />
+    <Content Include="css\stylesheet.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
@@ -2140,6 +2141,7 @@
     <Content Include="images\oleschool5.jpeg" />
     <Content Include="images\oleschool6.jpeg" />
     <Content Include="images\oleschool7.jpeg" />
+    <Content Include="images\OleSchoolLogo.jpeg" />
     <Content Include="Internships.aspx" />
     <Content Include="Jobs.aspx" />
     <Content Include="js\demo\chart-area-demo.js" />
