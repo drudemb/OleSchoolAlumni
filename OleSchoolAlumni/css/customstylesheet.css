@@ -1,0 +1,58 @@
+﻿.header {
+    background: #450084;
+}
+#nav1 {
+    background: #dfd2aa;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #808080;
+    }
+.navbar-dark .navbar-nav .nav-link {
+    
+    color: #450084;
+}
+.navbar-light .navbar-brand {
+    color: #ffffff;
+}
+    .navbar-light .navbar-brand:hover {
+        color: #808080;
+    }
+.nav-item:hover{
+    background: #ad9c65;
+}
+.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: #ffd800;
+    }
+
+#footer1 {
+    background: #450084;
+}
+
+#footer2 {
+    background: #450084;
+}
+
+#rightnav {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+#centernav {
+    justify-content: center;
+    margin:auto;
+}
+.fa-graduation-cap {
+    color: #ffffff;
+}
+#cap {
+    color: #450084;
+    font-size: 50px;
+}
+    

@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="OleSchoolAlumni.Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Ole School Alumni Group</title>
+
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawsome css--%>
+    <link href="fontawsome/css/all.css" rel="stylesheet" />
+
+    <%--our custom css--%>
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--Header Start-->
+        <div>
+            <header class="header navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="home.aspx">
+                    <i class="fa-solid fa-graduation-cap" width="30" height="30"></i>
+                    Ole School Alumni Group
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbarSupportedContent">
+                    <ul class="navbar-nav" id="rightnav">
+                        <li class="nav-item1 active">
+                            <asp:LinkButton class="nav-link" ID="lnkBtnLogin" runat="server" href="StudentLogin.aspx">Student Login</asp:LinkButton>
+
+                        </li>
+                        <li class="nav-item1 active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton14" runat="server" href="Apply.aspx">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item1 active">
+                            <asp:LinkButton CssClass="nav-link" ID="btnLogout" runat="server" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <!--Header End-->
+
+        <!--- Navagation Section --->
+        <div id="nav1">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="collapse navbar-collapse navbarSupportedContent">
+                    <ul class="navbar-nav" id="centernav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Home.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Events.aspx">Events</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="AboutUs.aspx">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Apply.aspx">Apply</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Donate.aspx">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--Nav End-->
+
+
+        <!--Main Content Placeholder-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!--Main Content Placeholder End-->
+
+        <!--Footer Start-->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks" ID="btnAdminLogin" runat="server" OnClick="btnAdminLogin_Click">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="btnMemberLogin" runat="server" OnClick="btnMemberLogin_Click">Member Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="btnEvents" runat="server" OnClick="btnEvents_Click">Events</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="btnAboutUs" runat="server" OnClick="btnAboutUs_Click">About Us</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="btnApply" runat="server" OnClick="btnApply_Click">Apply</asp:LinkButton>
+                            &nbsp;
+                             <asp:LinkButton class="footerlinks" ID="btnDonate" runat="server" OnClick="btnDonate_Click">Donate</asp:LinkButton>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color: whitesmoke">&copy All right Reversed. The Magistrates of Code</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!--Footer End-->
+    </form>
+</body>
+</html>
